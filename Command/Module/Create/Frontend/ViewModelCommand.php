@@ -56,7 +56,7 @@ class ViewModelCommand extends BaseCommand
     protected function configure()
     {
         $this->setName("process-eight:module:create:frontend:view-model");
-        $this->setDescription("Adds a new frontend PHP View Model class and updates the Layout Xml file.");
+        $this->setDescription("Adds a new frontend PHP View Model class and updates the Layout XML file.");
 
         $this->pipelineConfig['mode'] = 'configure';
 

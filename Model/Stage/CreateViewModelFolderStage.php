@@ -112,7 +112,7 @@ class CreateViewModelFolderStage extends BaseStage
      */
     public function processStage(array $payload) : array
     {
-        $subfolderPath = 'ViewModel' . DIRECTORY_SEPARATOR . $payload['config'][$this->id]['values'][ConfigKey::VIEW_MODEL_SUBDIRECTORY_PATH];
+        $subfolderPath        = 'ViewModel' . DIRECTORY_SEPARATOR . $payload['config'][$this->id]['values'][ConfigKey::VIEW_MODEL_SUBDIRECTORY_PATH];
         $absolutePathToFolder = $this->folder->getAbsolutePathToFolder($payload, $this->id, $subfolderPath);
 
         // Check if folder exists

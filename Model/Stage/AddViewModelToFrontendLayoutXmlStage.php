@@ -23,9 +23,6 @@ use ProcessEight\ModuleManager\Model\ConfigKey;
 /**
  * Class AddViewModelToFrontendLayoutXmlStage
  *
- * Adds the setup_version attribute to a VENDOR_NAME/MODULE_NAME/etc/module.xml file
- * Assumes that the VENDOR_NAME/MODULE_NAME/etc/ folder already exists
- *
  */
 class AddViewModelToFrontendLayoutXmlStage extends BaseStage
 {

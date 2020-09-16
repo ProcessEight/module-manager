@@ -86,8 +86,7 @@ class CreateFrontendViewModelCommandPipeline extends BasePipeline
             // Create the class
             ->pipe($this->createViewModelPhpClassFileStage)
             // Add the View Model XML to the Layout XML file
-            ->pipe($this->addViewModelToFrontendLayoutXmlStage)
-        ;
+            ->pipe($this->addViewModelToFrontendLayoutXmlStage);
 
         // Pass payload onto next Stage/Pipeline
         return $pipeline->process($payload);
